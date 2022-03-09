@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;700&family=Lato:ital,wght@1,700&family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+.vanban{
+    position: absolute;
+    margin-top: 180px;
+    white-space: nowrap;
+}
+.modern1{
+    font-size: 130px;
+    font-style: oblique;
+    letter-spacing: .26em;
+    font-style: italic;
+    animation: anim1 270s linear infinite;
+    font-weight: bolder;
+}
+.modern1 d{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px;
+}
+@keyframes anim1{
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(-100%);}
+}
+.modern2{
+    font-family: 'Lato', sans-serif;
+    font-size: 100px;
+    font-style: oblique;
+    letter-spacing: .26em;
+    font-style: italic;
+    animation: anim2 210s linear infinite;
+    font-weight: bolder;
+    animation-delay: 0ms;
+}
+@keyframes anim2{
+    100%{transform: translateX(1%);}
+    0%{transform: translateX(-90%);}
+}
+.anh1{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-left: 50%;
+}
+.header{
+    margin-top: 130px;
+}
+img{
+    transition: all linear 0.07s;
+}
+.anh1:hover img{
+    opacity: 0;
+}
+.logo{
+    margin: 100px ;
+    display: flex;
+    position: relative;
+    margin-top: 25px;
+}
+.logo_trang img{
+    display: inline-block;
+    width: 222px;
+    height: 80px;
+}
+.chu{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 43%;
+    letter-spacing: 2px;
+}
+a{
+    position: relative;
+    display: inline-block;
+    margin-top: 17px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 50px;
+    padding: 10px 50px;
+    background-color:rgb(255, 255, 255);
+    transition: 0.5s;
+    color: black;
+    border: 1px solid black;
+}
+a:hover{
+    cursor: pointer;
+}
+a span{
+    display: block;
+    position: absolute;
+    background: black;
+}
+a span:nth-child(1){
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition:  transform 0.3s;
+}
+a:hover span:nth-child(1){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition:  transform 0.3s;
+}
+a span:nth-child(2){
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:  transform 0.3s;
+}
+a:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: left;
+    transition:  transform 0.3s;
+}
+
+a span:nth-child(3){
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition:  transform 0.3s;
+    transition-delay: 0.3s;
+}
+a:hover span:nth-child(3){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition:  transform 0.3s;
+    transition-delay: 0.3s;
+}
+a span:nth-child(4){
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:  transform 0.3s;
+    transition-delay: 0.3s;
+}
+a:hover span:nth-child(4){
+    transform: scaleX(1);
+    transform-origin: left;
+    transition:  transform 0.3s;
+    transition-delay: 0.3s;
+}
+
