@@ -4,7 +4,6 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Fredoka', sans-serif;
-    background-color: #181a1b;
 }
 .header{
     width: 100% auto;
@@ -240,11 +239,218 @@
     width: 100%;
 }
 .anh_bia{
-    margin-top: 50px;
-    margin-bottom: 70px;
     width: auto;
     height: 800px;
     background-image: url('./anh.jpg');
     background-size: cover;
     background-position: left -500px;
 }
+.album{
+    padding: 100px 170px;
+    display: flex;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #181a1b;
+}
+.h1-post-1-img img{
+    width: 470px;
+    height: 270px;
+    display: block;
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+    max-width: 470px;
+    overflow: hidden;
+}
+.h1-post-1-img{
+    overflow: hidden;
+}
+.h1-post-1-img:hover img{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.ngay{
+    color: #e8e6e3;
+    margin: 20px 0 10px 0;
+}
+.li_album1{
+    color: #e8e6e3;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px 0 11px 0;
+}
+.nd_album_1{
+    color: #e8e6e3;
+    letter-spacing: .5px;
+    width: 400px;
+    margin: 20px 0 30px ;
+}
+.read_more{
+    text-decoration: none;
+    margin-top: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: #e8e6e3;
+    font-weight: bold;
+    position: relative;
+}
+.read_more:after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: #000000;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s ;
+    color: #ffffff;
+}
+.read_more:hover::after{
+    color: #ffffff;
+    width: 100%;
+}
+.anh_sale{
+    width: auto;
+    height: 300px;
+    background-image: url('./anh_sale50.PNG');
+    background-size: cover;
+}
+.anh_view{
+    padding: 45px;
+    background-color: #181a1b;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.anh_view1{
+    height: 450px;
+    width: 420px;
+    background-image: url('/pagse/aboutus/h1-slider-images-1-600x529.jpg');
+}
+.anh_view1:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.anh_view2{
+    height: 450px;
+    width: 420px;
+    background-image: url('/pagse/aboutus/h1-slider-images-2-600x529.jpg');
+}
+.anh_view2:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.anh_view3{
+    height: 450px;
+    width: 420px;
+    background-image: url('/pagse/aboutus/h1-slider-images-3-600x529.jpg');
+}
+.anh_view3:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.anh_view4{
+    height: 450px;
+    width: 420px;
+    background-image: url('/pagse/aboutus/h1-slider-images-4-600x529.jpg');
+}
+.anh_view4:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.hi{
+    font-size: 30px;
+    height: 450px;
+    width: 420px;
+    transition: all 0.8s ease-in-out;
+    opacity: 0;
+    font-weight: bold;
+}
+.hi:hover{
+    margin-top: 50px;
+    opacity: 1;
+}
+.footer{
+    margin: auto;
+    height: 500px;
+    background: #181a1b;
+    padding: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chu_footer{
+    color: white;
+    margin-top: 40px;
+    width: 300px;
+}
+.shopping{
+    color: #e8e6e3;
+}
+.c_shopping{
+    letter-spacing: 5px;
+    font-weight: bolder;
+    font-size: 17px;
+}
+.nd_shopping{
+    margin-top: 35px;
+    width: 80px ;
+}
+.nd_shopping a{
+    text-decoration: none;
+    color:#e8e6e3;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+.nd_shopping a:hover{
+    color: #8c8274;
+}
+.nd_company{
+    margin-top: 35px;
+    width: 120px ;
+}
+.nd_company a{
+    text-decoration: none;
+    color:#e8e6e3;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+.nd_company a:hover{
+    color: #8c8274;
+}
+.nd_sub{
+    margin-top: 0px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 17px;
+    color:#e8e6e3;
+}
+.input{
+    margin-top: 35px;
+}
+input{
+    border: 0;
+    width: 270px;
+    margin-top: 0px;
+    padding: 25px;
+    outline: none;
+    background: #181a1b;
+    border-bottom: 2px solid #8c8274;
+    font-size: 17px;
+    color: #e8e6e3;
+}
+::-webkit-input-placeholder{
+    color: #e8e6e3;
+}
+.plane{
+    height: 15px;
+    width: 15px;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(29deg) brightness(108%) contrast(101%);
+}
+
+
+
