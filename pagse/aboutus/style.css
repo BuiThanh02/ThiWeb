@@ -4,6 +4,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Fredoka', sans-serif;
+    background-color: #181a1b;
 }
 .header{
     width: 100% auto;
@@ -237,4 +238,13 @@
 }
 .nd_about a:hover::after{
     width: 100%;
+}
+.anh_bia{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    width: auto;
+    height: 800px;
+    background-image: url('./anh.jpg');
+    background-size: cover;
+    background-position: left -500px;
 }
