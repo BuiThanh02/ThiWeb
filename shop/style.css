@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+.header{
+    width: 100% auto;
+    height: 120px;
+    padding: 35px;
+    background-color: #181a1b;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_header img{
+    display: inline-block;
+    width: 222px;
+    height: 80px;
+}
+.logo_header:hover img{
+    cursor: pointer;
+}
+.s img{
+    filter: invert(100%) sepia(0%) saturate(4128%) hue-rotate(185deg) brightness(98%) contrast(85%);
+    width: 20px;
+    height: 20px;
+    margin: 15px;
+    padding: 2px;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.user:hover{
+    border-bottom: 1px solid white;
+}
+.search:hover{
+    position: relative;
+    border-bottom: 1px solid white;
+}
+.shopping_bag:hover{
+    position: relative;
+    border-bottom: 1px solid white;
+}
+.menu:hover{
+    position: relative;
+    border-bottom: 1px solid white;
+}
+.navbar{
+    position: relative;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_item{ 
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.menu_item1{
+    text-transform: uppercase;
+    margin: 0 25px;
+    color: #e8e6e3;
+    font-size: 17px;
+    text-decoration: none;
+}
+.menu_item2{
+    text-transform: uppercase;
+    margin: 0 25px;
+    color: #e8e6e3;
+    font-size: 17px;
+    text-decoration: none;
+}
+.menu_item3{
+    text-transform: uppercase;
+    margin: 0 25px;
+    color: #e8e6e3;
+    font-size: 17px;
+    text-decoration: none;
+}
+.menu_item4{
+    text-transform: uppercase;
+    margin: 0 25px;
+    color: #e8e6e3;
+    font-size: 17px;
+    text-decoration: none;
+}
+.menu_item5{
+    text-transform: uppercase;
+    margin: 0 25px;
+    color: #e8e6e3;
+    font-size: 17px;
+    text-decoration: none;
+}
+.menu_item1:after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: white;
+    position: absolute;
+    left: 29px;
+    bottom: 22px;
+    transition: .5s;
+}
+.menu_item1:hover:after{
+    width: 15%;
+}
+.menu_item2:after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: white;
+    position: absolute;
+    left: 135px;
+    bottom: 22px;
+    transition: .5s;
+}
+.menu_item2:hover:after{
+    width: 14%;
+}
+.menu_item3:after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: white;
+    position: absolute;
+    left: 241px;
+    bottom: 22px;
+    transition: .5s;
+}
+.menu_item3:hover:after{
+    width: 13%;
+}
+.menu_item4:after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: white;
+    position: absolute;
+    left: 340px;
+    bottom: 22px;
+    transition: .5s;
+}
+.menu_item4:hover:after{
+    width: 13%;
+}
+.menu_item5:after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: white;
+    position: absolute;
+    left: 440px;
+    bottom: 22px;
+    transition: .5s;
+}
+.menu_item5:hover:after{
+    width: 12%;
+}
+.link_home{
+    width: auto;
+    height: 150px;
+    padding: 70px;
+    background-color: #000000;
+    color: #e8e6e3;
+}
+.st_link_home{
+    margin-left: 210px;
+}
+.link_home1{
+    text-decoration: none;
+    color: #e8e6e3;
+}
+.link_home1:hover{
+    border-bottom: 1px solid #e8e6e3;
+}
+.nd_shop{
+    background-color: #181a1b;
+    color: #e8e6e3;
+    width:auto;
+    height: 2000px;
+    padding-top: 130px;
+    padding-left: 280px;
+}
+.list_doban{
+    position:relative;
+    display:inline-flex;
+    float: left;
+}
+.do_ban{
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.anh_doban{
+    background-color: white;
+    display: inline-block;
+}
+.list_anhdoban{
+    width: 300px;
+    height: 270px;
+}
+.ndcuanhdoban{
+    text-align: center;
+    text-decoration: none;
+    color: #e8e6e3;
+}
+.list_chudoban{
+    margin: 25px 25px;
+    font-size: 17px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.logo_hover_list{
+    align-items: center;
+    text-align: center;
+    letter-spacing: 10px;
+    position: absolute;
+    width: 300px;
+    height: 360px;
+    bottom: -20px;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+.background_logolist{
+    position: relative;
+    bottom: -310px;
+    background-color: #181a1b;
+}
+.logo_hover_list1 img{
+    filter: invert(97%) sepia(3%) saturate(3949%) hue-rotate(298deg) brightness(114%) contrast(83%);
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    position: relative;
+}
+.logo_hover_list:hover{
+    bottom: 10px;
+    opacity: 1;
+}
