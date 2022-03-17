@@ -185,10 +185,12 @@
     padding-top: 130px;
     padding-left: 280px;
 }
+.nd_shop_btrai{
+    float: left;
+}
 .list_doban{
     position:relative;
     display:inline-flex;
-    float: left;
 }
 .do_ban{
     margin-top: 20px;
@@ -241,4 +243,55 @@
 .logo_hover_list:hover{
     bottom: 10px;
     opacity: 1;
+}
+.nd_shop_bphai{
+    position:relative;
+    float: right;
+    margin-right: 300px;
+}
+.searchr_1{
+    border: 0;
+    width: 270px;
+    padding: 5px;
+    background: #181a1b;
+    border-bottom: 2px solid #8c8274;
+    font-size: 18px;
+    color: #e8e6e3;
+}
+::-webkit-input-placeholder{
+    color: #e8e6e3;
+}
+.chu_CATEGORY{
+    font-size: 27px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 21px;
+}
+.style_caregory{
+    margin-top: 12px;
+}
+.nd_CATEGORY{
+    font-size: 17px;
+    color: #e8e6e3;    
+    text-decoration: none;
+    display: inline-block;
+}
+.anh_trung{
+    margin-top: 35px;
+    width: 270px;
+    height: 210px;
+    position: relative;
+}
+.nd_CATEGORY::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: width .2s;
+}
+.nd_CATEGORY:hover::after{
+    width: 100%;
+    transition: width .2s;
 }

@@ -28,7 +28,7 @@
     width: 20px;
     height: 20px;
     margin: 15px;
-    padding: 2px;
+    padding: 1px;
     display: inline-block;
     position: relative;
     transition: 0.5s;
@@ -66,99 +66,20 @@
     color: #e8e6e3;
     font-size: 17px;
     text-decoration: none;
-}
-.menu_item2{
-    text-transform: uppercase;
-    margin: 0 25px;
-    color: #e8e6e3;
-    font-size: 17px;
-    text-decoration: none;
-}
-.menu_item3{
-    text-transform: uppercase;
-    margin: 0 25px;
-    color: #e8e6e3;
-    font-size: 17px;
-    text-decoration: none;
-}
-.menu_item4{
-    text-transform: uppercase;
-    margin: 0 25px;
-    color: #e8e6e3;
-    font-size: 17px;
-    text-decoration: none;
-}
-.menu_item5{
-    text-transform: uppercase;
-    margin: 0 25px;
-    color: #e8e6e3;
-    font-size: 17px;
-    text-decoration: none;
+    display: inline-block;
 }
 .menu_item1:after{
     content: '';
+    display: block;
     height: 2px;
     width: 0%;
     background: white;
-    position: absolute;
-    left: 29px;
-    bottom: 22px;
-    transition: .5s;
+    transition: width .3s ease-in-out;
 }
 .menu_item1:hover:after{
-    width: 15%;
-}
-.menu_item2:after{
-    content: '';
-    height: 2px;
-    width: 0%;
-    background: white;
-    position: absolute;
-    left: 135px;
-    bottom: 22px;
-    transition: .5s;
-}
-.menu_item2:hover:after{
-    width: 14%;
-}
-.menu_item3:after{
-    content: '';
-    height: 2px;
-    width: 0%;
-    background: white;
-    position: absolute;
-    left: 241px;
-    bottom: 22px;
-    transition: .5s;
-}
-.menu_item3:hover:after{
-    width: 13%;
-}
-.menu_item4:after{
-    content: '';
-    height: 2px;
-    width: 0%;
-    background: white;
-    position: absolute;
-    left: 340px;
-    bottom: 22px;
-    transition: .5s;
-}
-.menu_item4:hover:after{
-    width: 13%;
-}
-.menu_item5:after{
-    content: '';
-    height: 2px;
-    width: 0%;
-    background: white;
-    position: absolute;
-    left: 440px;
-    bottom: 22px;
-    transition: .5s;
-}
-.menu_item5:hover:after{
-    width: 12%;
+    width: 100%;
+    transition: width .3s ease-in-out;
+
 }
 
 /* footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
