@@ -36,26 +36,21 @@
         </div>
     </div>
     <div class="login">
-        <h1>Member Login</h1>
-        <br>
-        <p>Email address</p>
-        <br>
-        <input type="text" placeholder="enter Email">
-        <br>
-        <p>password</p>
-        <br>
-        <input type="password" placeholder="enter password">
-        <br>
-        <div class="check">
-            <input type="checkbox">
-            Remmember me
-        </div>
-        <br>
-        <button>Login</button>
-        <br>
-        <a href="#">
-            forget password
-        </a>
+        <form id="form-login" action="/action_page.php">
+            <div class="form-input">
+                <!-- <label for="id">ID:</label><br> -->
+                <input type="text" id="id" name="id" placeholder="Email"><br>
+            </div>
+            <div class="form-input">
+                <!-- <label for="password">Password:</label><br> -->
+            <input type="password" id="password" name="password" placeholder="Password"><br><br>
+            </div>
+            
+            <div class="form-input submit">
+                <input class="login-submit" type="submit" value="Login">
+            </div>
+            
+          </form> 
     </div>
 </body>
 </html>

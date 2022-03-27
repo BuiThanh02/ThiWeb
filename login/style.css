@@ -103,15 +103,55 @@ body{
     font-family: sans-serif;
 }
 .login{
-    margin-left: 650px;
-    width: 300px;
-    height: 350px;
+    margin: 22px auto !important;
+    /* padding: 35px 0; */
+    width: 396px;
+    height: auto;
     background-color: white;
     border: 1px solid gray;
     border-radius: 10px;
     text-align: center;
     margin: 0 auto;
+
 }
+
+.login #form-login {
+    width: 100%;
+    padding: 10px 0 24px 0;
+}
+
+.login #form-login input {
+    font-size: 17px;
+    width: 330px;
+    padding: 14px 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 223, 226);
+    border-radius: 6px;
+    display: flex;
+}
+
+.login #form-login input:focus  {
+    border: 1px solid red !important;
+}
+
+.login #form-login .form-input.submit {
+
+}
+
+.login #form-login .login-submit {
+    background-color: rgb(24, 119, 242);
+    font-size: 20px;
+    color: azure;
+}
+
+.login .form-input {
+    width: 320px;
+    margin: 0 auto;
+    padding: 6px 0px;
+    display: flex;
+}
+
 .login h1{
     display: inline-block;
     color: gray;
