@@ -86,9 +86,9 @@
 /* footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
 .footer{
     margin: auto;
-    height: 500px;
-    background: #181a1b;
-    padding: 150px;
+    height: 200px;
+    background: #000000;
+    padding: 170px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -142,13 +142,13 @@
 .input{
     margin-top: 35px;
 }
-input{
+.st_input_FOOTER{
     border: 0;
     width: 270px;
     margin-top: 0px;
     padding: 25px;
     outline: none;
-    background: #181a1b;
+    background: #000000;
     border-bottom: 2px solid #8c8274;
     font-size: 17px;
     color: #e8e6e3;
