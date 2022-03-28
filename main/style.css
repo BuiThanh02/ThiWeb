@@ -52,12 +52,6 @@
 .header{
     margin-top: 130px;
 }
-img{
-    transition: all linear 0.07s;
-}
-.anh1:hover img{
-    opacity: 0;
-}
 .logo{
     margin: 100px ;
     display: flex;
@@ -100,6 +94,7 @@ a span{
     position: absolute;
     background: black;
 }
+
 a span:nth-child(1){
     left: 0;
     bottom: 0;
@@ -114,6 +109,7 @@ a:hover span:nth-child(1){
     transform-origin: bottom;
     transition:  transform 0.3s;
 }
+
 a span:nth-child(2){
     left: 0;
     bottom: 0;
@@ -145,6 +141,7 @@ a:hover span:nth-child(3){
     transition:  transform 0.3s;
     transition-delay: 0.3s;
 }
+
 a span:nth-child(4){
     left: 0;
     top: 0;
