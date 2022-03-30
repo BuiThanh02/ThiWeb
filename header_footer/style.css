@@ -83,10 +83,31 @@
     transition: width .3s ease-in-out;
 }
 
+.link_home{
+    width: auto;
+    height: 130px;
+    padding: 55px;
+    background-color: #000000;
+    color: #e8e6e3;
+}
+.st_link_home{
+    margin-left: 210px;
+}
+.link_home1{
+    text-decoration: none;
+    color: #e8e6e3;
+}
+.link_home1:hover{
+    border-bottom: 1px solid #e8e6e3;
+}
+
+
+
+
 /* footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
 .footer{
     margin: auto;
-    height: 200px;
+    height: 140px;
     background: #000000;
     padding: 170px;
     display: flex;

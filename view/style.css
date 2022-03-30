@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -16,14 +17,18 @@
     align-items: center;
     justify-content: space-between;
 }
-.logo_header img{
-    display: inline-block;
-    width: 222px;
-    height: 80px;
+.logo_header{
+    margin-left: 20px;
 }
-.logo_header:hover img{
-    cursor: pointer;
+.st_logo_web{
+    text-decoration: none;
+    color: white;
+    font-family: 'Hurricane', cursive;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 10px;
 }
+
 .s img{
     filter: invert(100%) sepia(0%) saturate(4128%) hue-rotate(185deg) brightness(98%) contrast(85%);
     width: 20px;
@@ -78,9 +83,6 @@
 .navbar ul li a:hover:after{
     width: 100%;
 }
-#gach_chan{
-    border-bottom: 2px solid rgb(0, 0, 0);
-}
 .dropdown__menu_pagse{
     display: none;
 }
@@ -120,10 +122,12 @@
     padding-top: 12px;
     padding-bottom: 15px;
 }
+
+
 .link_home{
     width: auto;
-    height: 150px;
-    padding: 70px;
+    height: 130px;
+    padding: 55px;
     background-color: #000000;
     color: #e8e6e3;
 }
@@ -137,6 +141,7 @@
 .link_home1:hover{
     border-bottom: 1px solid #e8e6e3;
 }
+
 .nd_view{
     background-color:#181a1b;
     width: auto;
@@ -195,19 +200,21 @@
 .nd_view_1{
     display:flex;
 }
+/* footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
 .footer{
     margin: auto;
-    height: 500px;
+    height: 140px;
     background: #000000;
-    padding: 150px;
+    padding: 170px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .chu_footer{
     color: white;
-    margin-top: 40px;
+    margin-top: 15px;
     width: 300px;
+    margin-bottom: 15px;
 }
 .shopping{
     color: #e8e6e3;
@@ -253,7 +260,7 @@
 .input{
     margin-top: 35px;
 }
-input{
+.st_input_FOOTER{
     border: 0;
     width: 270px;
     margin-top: 0px;
