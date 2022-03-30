@@ -189,6 +189,7 @@
 .img__overlay:hover > *{
     transform: translateY(0);
 }
+
 .img__title{
     font-size: 15px;
 }

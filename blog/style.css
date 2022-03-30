@@ -1,30 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Fredoka', sans-serif;
+    list-style: none;
 }
 .header{
     width: 100% auto;
     height: 120px;
     padding: 35px;
-    background-color: #181a1b;
+    background-color: #ffffff;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.logo_header img{
-    display: inline-block;
-    width: 222px;
-    height: 80px;
+.logo_header{
+    margin-left: 20px;
 }
-.logo_header:hover img{
-    cursor: pointer;
+.st_logo_web_header{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Hurricane', cursive;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 10px;
 }
+
 .s img{
-    filter: invert(100%) sepia(0%) saturate(4128%) hue-rotate(185deg) brightness(98%) contrast(85%);
     width: 20px;
     height: 20px;
     margin: 15px;
@@ -34,57 +39,94 @@
     transition: 0.5s;
 }
 .user:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 .search:hover{
     position: relative;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 .shopping_bag:hover{
     position: relative;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 .menu:hover{
     position: relative;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
-.navbar{
-    position: relative;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.menu_item{ 
+.navbar ul{
     list-style: none;
-    display: inline-block;
-    margin: 0 20px;
+    display: flex;
 }
-.menu_item1{
-    text-transform: uppercase;
-    margin: 0 25px;
-    color: #e8e6e3;
-    font-size: 17px;
+.navbar ul li{
+    position: relative;
+    padding-top: 48px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 48px;
+}
+.navbar ul li a{
+    color: #000000;
     text-decoration: none;
-    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
-.menu_item1:after{
+.navbar ul li a:after{
     content: '';
-    display: block;
+    display:block;
     height: 2px;
     width: 0%;
-    background: white;
+    background: rgb(0, 0, 0);
     transition: width .3s ease-in-out;
 }
-.menu_item1:hover:after{
+.navbar ul li a:hover:after{
     width: 100%;
-    transition: width .3s ease-in-out;
-
 }
+.dropdown__menu_pagse{
+    display: none;
+}
+.navbar ul li:hover .dropdown__menu_pagse{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:#ffffff;
+    border-top: 1px solid rgb(0, 0, 0);
+}
+.dropdown__menu_pagse ul li a{
+    font-size: 16px;
+    font-weight: 320;
+    letter-spacing: 1px;
+}
+.dropdown__menu_pagse ul li a:after{
+    content: '';
+    display:block;
+    height: 0px;
+    width: 0%;
+    background: rgb(255, 255, 255);
+    transition: width .3s ease-in-out;
+}
+.dropdown__menu_pagse ul li a:hover{
+    color:#8c8274;
+}
+.dropdown__menu_pagse ul li a:hover::after{
+    width: 100%;
+}
+.dropdown__menu_pagse ul{
+    display:block;
+    padding-top: 25px;
+    width: 200px;
+}
+.dropdown__menu_pagse ul li{
+    padding-top: 12px;
+    padding-bottom: 15px;
+}
+
+
 .link_home{
     width: auto;
-    height: 150px;
-    padding: 70px;
+    height: 130px;
+    padding: 55px;
     background-color: #000000;
     color: #e8e6e3;
 }
@@ -98,6 +140,7 @@
 .link_home1:hover{
     border-bottom: 1px solid #e8e6e3;
 }
+
 .h1{
     text-align: center;
     font-size: 27px;
@@ -218,17 +261,26 @@
 /* footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
 .footer{
     margin: auto;
-    height: 200px;
+    height: 140px;
     background: #000000;
     padding: 170px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.st_logo_web{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Hurricane', cursive;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
 .chu_footer{
     color: white;
-    margin-top: 40px;
+    margin-top: 15px;
     width: 300px;
+    margin-bottom: 15px;
 }
 .shopping{
     color: #e8e6e3;
