@@ -14,3 +14,9 @@ id="gach_chan"
 
 
 user-select: none;
+
+
+id="hienboder" user
+#hienboder{
+    border-bottom: 1px solid black;
+}
