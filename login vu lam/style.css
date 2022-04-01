@@ -208,7 +208,7 @@ form .txt_field{
     width: 100%;
     padding: 0 5px;
     height: 40px;
-    font-size: 20px;
+    font-size: 19px;
     border: none;
     background: none;
     outline: none;
@@ -360,7 +360,17 @@ input[type="submit"]:hover{
     top: -40px;
     left: -1100px;
 }
-
+#input_error{
+    margin-top: -0.7rem;
+    color: red;
+    font-size: 0.9rem;
+}
+#message_cf_password{
+    margin-top: -0.9rem;
+    margin-bottom: 0.9rem;
+    color: red;
+    font-size: 0.9rem;
+}
 
 
 /* footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */

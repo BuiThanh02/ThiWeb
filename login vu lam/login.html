@@ -73,9 +73,9 @@
         <div class="st_register">
             <div class="nd_account hidden" id="createAccount">
                 <h1>REGISTER</h1>
-                <form method="post">
+                <form id="form" method="post">
                     <div class="txt_field">
-                        <input type="text" id="signupUsername" required>
+                        <input type="text" id="name" required>
                         <span></span>
                         <label>Username</label>
                     </div>
@@ -85,16 +85,18 @@
                         <label>Email address</label>
                     </div>
                     <div class="txt_field">
-                        <input type="password" required>
+                        <input class="cl_pass" type="password" id="password" required>
                         <span></span>
                         <label>Password</label>
                     </div>
+                    <div id="input_error"></div>
                     <div class="txt_field">
-                        <input type="password" required>
+                        <input class="cl_cf_pass" type="password" id="cf_password" required>
                         <span></span>
                         <label>Confirm password</label>
                     </div>
-                    <input type="submit" value="Register">
+                    <div id="message_cf_password"></div>
+                    <input class="button" type="submit" value="Register">
                     <div class="signup_link">
                         Already have an account? <a href="#" id="linkLogin">Sign in</a>
                     </div>
