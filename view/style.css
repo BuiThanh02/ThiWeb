@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    user-select: none;
 }
 .logo_header{
     margin-left: 20px;
@@ -130,6 +131,7 @@
     padding: 55px;
     background-color: #000000;
     color: #e8e6e3;
+    position: relative;
 }
 .st_link_home{
     margin-left: 210px;
@@ -149,12 +151,29 @@
     padding-left: 250px;
     padding-top: 120px;
 }
+.right-col{
+    float: right;
+    display: flex;
+    margin-right: 200px;
+    margin-top: -28px;
+    align-items: center;
+}
+#icon_play{
+    filter: invert(100%) sepia(14%) saturate(1413%) hue-rotate(292deg) brightness(126%) contrast(80%);
+    width: 35px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+
 
 .anh_streets{
     position: relative;
     width: 400px;
     margin-left: 30px;
     margin-bottom: 30px;
+    user-select: none;
 }
 .st_anh_streets img{
     height: 500px;
