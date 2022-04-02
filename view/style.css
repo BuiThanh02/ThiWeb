@@ -11,19 +11,18 @@
     width: 100% auto;
     height: 120px;
     padding: 35px;
-    background-color: #181a1b;
+    background-color: #ffffff;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    user-select: none;
 }
 .logo_header{
     margin-left: 20px;
 }
-.st_logo_web{
+.st_logo_web_header{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Hurricane', cursive;
     font-size: 70px;
     font-weight: 600;
@@ -31,7 +30,6 @@
 }
 
 .s img{
-    filter: invert(100%) sepia(0%) saturate(4128%) hue-rotate(185deg) brightness(98%) contrast(85%);
     width: 20px;
     height: 20px;
     margin: 15px;
@@ -41,19 +39,19 @@
     transition: 0.5s;
 }
 .user:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 .search:hover{
     position: relative;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 .shopping_bag:hover{
     position: relative;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 .menu:hover{
     position: relative;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 .navbar ul{
     list-style: none;
@@ -67,7 +65,7 @@
     padding-bottom: 48px;
 }
 .navbar ul li a{
-    color: #e8e6e3;
+    color: #000000;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -78,7 +76,7 @@
     display:block;
     height: 2px;
     width: 0%;
-    background: white;
+    background: rgb(0, 0, 0);
     transition: width .3s ease-in-out;
 }
 .navbar ul li a:hover:after{
@@ -92,12 +90,12 @@
     position: absolute;
     left: 0;
     top: 100%;
-    background-color:#181a1b;
-    border-top: 1px solid pink;
+    background-color:#ffffff;
+    border-top: 1px solid rgb(0, 0, 0);
 }
 .dropdown__menu_pagse ul li a{
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 320;
     letter-spacing: 1px;
 }
 .dropdown__menu_pagse ul li a:after{
@@ -105,7 +103,7 @@
     display:block;
     height: 0px;
     width: 0%;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     transition: width .3s ease-in-out;
 }
 .dropdown__menu_pagse ul li a:hover{
@@ -131,7 +129,6 @@
     padding: 55px;
     background-color: #000000;
     color: #e8e6e3;
-    position: relative;
 }
 .st_link_home{
     margin-left: 210px;
@@ -145,7 +142,7 @@
 }
 
 .nd_view{
-    background-color:#181a1b;
+    background-color:#ffffff;
     width: auto;
     height: 1800px;
     padding-left: 250px;
@@ -155,17 +152,24 @@
     float: right;
     display: flex;
     margin-right: 200px;
-    margin-top: -28px;
+    margin-top: -20px;
     align-items: center;
 }
-#icon_play{
-    filter: invert(100%) sepia(14%) saturate(1413%) hue-rotate(292deg) brightness(126%) contrast(80%);
-    width: 35px;
-    cursor: pointer;
-    margin-left: 10px;
+.right-col p{
+    margin-right: 10px;
 }
-
-
+.playpause.playing{
+    background-color: pink;
+    clip-path: polygon(0 0, 40% 0, 40% 100%, 60% 100%, 60% 0, 100% 0, 100% 100%, 0 100%);
+}
+.playpause{
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+    clip-path: polygon(0 0, 50% 25%, 50% 75%, 50% 75%, 50% 25%, 100% 50%, 100% 50%, 0 100%);
+}
 
 
 .anh_streets{
@@ -229,6 +233,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.st_logo_web{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Hurricane', cursive;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 10px;
 }
 .chu_footer{
     color: white;
