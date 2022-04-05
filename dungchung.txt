@@ -16,7 +16,7 @@ id="gach_chan"
 user-select: none;
 
 
-id="hienboder" user
+id="hienboder"
 #hienboder{
     border-bottom: 1px solid black;
 }
