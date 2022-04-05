@@ -84,7 +84,7 @@ function placeOrder(){
         alert("Please enter your email !!!");
     }
 
-    cou = 0;
-    localStorage.setItem('cou', JSON.stringify(cou));
+    localStorage.removeItem('cou');
+    localStorage.removeItem('cart');
     alert('Thank you')
 }
