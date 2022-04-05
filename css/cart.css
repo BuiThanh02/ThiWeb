@@ -1,0 +1,173 @@
+.banner{
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+#noCart p{
+    width: 1200px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+#noCart button{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    font-size: 18px;
+    padding: 15px 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+#noCart button:hover{
+    background-color: white;
+    color: black;
+}
+#noCart{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+#proPrice:before{
+    content: "$";
+}
+#proTotal:before{
+    content: "$";
+}
+
+.quantity {
+    position: relative;
+}
+.quantity input {
+    width: 40px;
+    height: 60px;
+    line-height: 1.65;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    border-right: 2px solid black;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.quantity input:focus {
+    outline: 0;
+}
+.quantity-nav {
+    float: left;
+    position: relative;
+    height: 42px;
+}
+.quantity-button {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    width: 20px;
+    text-align: center;
+    color: #333;
+    font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+    line-height: 1.7;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.quantity-button.quantity-up {
+    position: absolute;
+    top: -5px;
+    height: 38px;
+    width: 28px;
+    font-size: 20px;
+    right: -55px;
+    color: black;
+    font-weight: lighter;
+    border-bottom: 2px solid black;
+}
+.quantity-button.quantity-down {
+    position: absolute;
+    bottom: -0px;
+    height: 20px;
+    width: 28px;
+    font-size: 20px;
+    right: -55px;
+    color: black;
+    font-weight: lighter;
+
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*input[type=number]*/
+/*{*/
+/*    -moz-appearance: textfield;*/
+/*}*/
+tbody td{
+    width: 1200px;
+    height: 120px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid black;
+}
+.disCount input:focus{
+    outline: none;
+}
+.disCount input{
+    font-size: 20px;
+    height: 61px;
+    margin-bottom: 0;
+}
+.disCount input::placeholder{
+    color: black;
+}
+.disCount button{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    font-size: 18px;
+    padding: 15px 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+.disCount button:hover{
+    background-color: white;
+    color: black;
+}
+.disCount{
+    margin-top: 40px;
+}
+.money:before{
+    content: "$";
+}
+.checkOut button{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    font-size: 18px;
+    padding: 15px 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.checkOut button:hover{
+    background-color: white;
+    color: black;
+}
+::selection{
+    color: white;
+    background-color: black;
+}
+table{
+    border-spacing: 0px;
+}

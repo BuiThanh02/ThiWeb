@@ -1,0 +1,40 @@
+.banner{
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+.label{
+    width: 650px;
+    font-weight: bold;
+}
+.input{
+    width: 630px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    margin-bottom: 50px;
+}
+.checkOut button{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    font-size: 18px;
+    padding: 15px 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.checkOut button:hover{
+    background-color: white;
+    color: black;
+}
+::selection{
+    color: white;
+    background-color: black;
+}
+.money:before{
+    content: "$";
+}
+input{
+    margin-top: 20px;
+    font-size: 15px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckOut</title>
+    <link rel="stylesheet" href="/css/checkout.css">
+    <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+</head>
+<body  style="width: 100%; margin: auto">
+    <div style="background-color: white; font-family: Barlow,sans-serif;">
+        <div class="banner">
+            <div style="background-color: black; height: 25px">
+            </div>
+            <div style="margin-left: 100px">
+                <P><a href="#" style="text-decoration: none; color: white">Home</a> / <a href="#" style="text-decoration: none; color: white">Cart</a> / Checkout</P>
+            </div>
+        </div>
+        <div style="width: 1300px; margin-left: auto; margin-right: auto; margin-top: 100px">
+            <div style="height: 1100px">
+                <div style="width: 650px; float: left">
+                    <p style="font-size: 20px; font-weight: bold; letter-spacing: 5px">BILLING DETAILS</p>
+                    <form>
+                        <label class="label">First name *</label>
+                        <input id="firstName" type="text" class="input">
+                    </form>
+                    <form>
+                        <label class="label">Last name *</label>
+                        <input id="lastName" type="text" class="input">
+                    </form>
+                    <form>
+                        <label class="label">Company name ( optional )</label>
+                        <input class="input" type="text">
+                    </form>
+                    <form>
+                        <label class="label">Country / Region *</label>
+                        <input id="country" type="text" class="input">
+                    </form>
+                    <form>
+                        <label class="label">Street address *</label>
+                        <input id="street" type="text" class="input">
+                    </form>
+                    <form>
+                        <label class="label">Town / City *</label>
+                        <input id="city" type="text" class="input">
+                    </form>
+                    <form>
+                        <label class="label">Postcode *</label>
+                        <input id="postcode" type="text" class="input">
+                    </form>
+                    <form>
+                        <label class="label">Phone *</label>
+                        <input id="phone" type="text" class="input">
+                    </form>
+                    <form>
+                        <label class="label">Email address *</label>
+                        <input id="email" type="email" class="input">
+                    </form>
+                </div>
+                <div style="width: 650px; float: right">
+                    <p style="font-size: 20px; font-weight: bold; letter-spacing: 5px">ADDITIONAL INFORMATION</p>
+                    <form style="margin-top: 20px">
+                        <label style="width: 650px; font-weight: bold" for="note"> Order notes ( optional )</label>
+                        <textarea style="width: 650px; border: 2px solid black; height: 100px" placeholder="Notes about your order, e.g. special note for delivery" id="note"></textarea>
+                    </form>
+                </div>
+            </div>
+            <div id="product">
+
+            </div>
+        </div>
+    </div>
+
+<script src="/js/checkout.js"></script>
+</body>
+</html>

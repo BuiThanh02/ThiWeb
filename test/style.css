@@ -1,47 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Fredoka', sans-serif;
+html, body {
+    position: relative;
+    height: 100%;
 }
-.dau:after{
-    content: " vuvip123";
-    font-size: 20px;
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
 }
-.dau:before{
-    content: "vuvip1123";
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
 }
-.menu_item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    padding: 15px 0;
-    text-decoration: none;
-}
-.menu_item1{
-    text-transform: uppercase;
-    margin: 0 15px;
-    position:relative;
-    color: #e8e6e3;
-    font-size: 17px;
-    text-decoration: none;
-
-}
-.menu_item1:before{
-    contain: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+.swiper-container {
     width: 100%;
     height: 100%;
-    border-top: 1px solid #ffff;
-    transform: scaleY(2);
-    opacity: 0;
-    transition: .5s;
 }
-.menu_item1:hover::before{
-    transform: scaleY(1);
-    opacity: 1;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
