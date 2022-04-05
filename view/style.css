@@ -140,6 +140,11 @@
 .link_home1:hover{
     border-bottom: 1px solid #e8e6e3;
 }
+#gach_chan{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+
 
 .nd_view{
     background-color:#ffffff;

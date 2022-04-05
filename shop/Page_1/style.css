@@ -17,6 +17,9 @@
     align-items: center;
     justify-content: space-between;
 }
+#gach_chan{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
 .logo_header{
     margin-left: 20px;
 }
@@ -266,7 +269,7 @@
 }
 
 #next img{
-    width: 30px;
+    width: 15px;
     height: 15px;
     transition:  all 0.3s ease-in-out;
 }
@@ -292,16 +295,23 @@
 .st_pagin.st_pagin:hover{
     color: #8c8274;
 }
-
 /* footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
 .footer{
-    margin: auto;
+    margin-top: 0px;
     height: 140px;
     background: #000000;
     padding: 170px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.st_logo_web{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Hurricane', cursive;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 10px;
 }
 .chu_footer{
     color: white;
