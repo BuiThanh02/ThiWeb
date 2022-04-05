@@ -6,3 +6,17 @@
     font-family: 'Fredoka', sans-serif;
 }
 <link rel="stylesheet" href="style.css">
+
+id="gach_chan"
+#gach_chan{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+
+user-select: none;
+
+
+id="hienboder" user
+#hienboder{
+    border-bottom: 1px solid black;
+}
