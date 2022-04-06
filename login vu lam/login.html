@@ -45,6 +45,7 @@
     </div>
     <div class="nd">
         <div class="nd_login" id="login">
+            <div style="position:absolute;">
                 <h1>LOGIN</h1>
                 <div class="form_message form_message--error"></div>
                 <form method="post">
@@ -69,10 +70,12 @@
                 </div>
                 </form>
                 <img class="anh_login" src="anh_login.jpg">
+            </div>
         </div>
         <div class="st_register">
             <div class="nd_account hidden" id="createAccount">
-                <h1>REGISTER</h1>
+                <div class="st_ndaccount">
+                    <h1>REGISTER</h1>
                 <form id="form" method="post">
                     <div class="txt_field">
                         <input type="text" id="name" required>
@@ -101,11 +104,14 @@
                         Already have an account? <a href="#" id="linkLogin">Sign in</a>
                     </div>
                 </form>
+                </div>
                 <img class="anh_rigister" src="anh_regoster.jpg">
             </div>
         </div>
         <div class="nd_reset hidden" id="resetPass">
-            <h1>RESET PASS</h1>
+            <div><img class="anh_resetpass" src="anh_resetpass.jpg"></div>
+            <div>
+                <h1>RESET PASS</h1>
             <form method="post">
                 <div class="resetpass">Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.</div>
                 <div class="txt_field">
@@ -118,10 +124,9 @@
                     Go back to <a href="#" id="linkGoback">Login</a>
                 </div>
             </form>
-            <img class="anh_resetpass" src="anh_resetpass.jpg">
+            </div>
         </div>
     </div>
-
     <div class="footer">
         <div class="logo_header">
             <a class="st_logo_web" href="/Home.html">Fashion</a>
