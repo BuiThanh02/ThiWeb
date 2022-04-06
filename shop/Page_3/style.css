@@ -11,18 +11,21 @@
     width: 100% auto;
     height: 120px;
     padding: 35px;
-    background-color: #181a1b;
+    background-color: #ffffff;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+#gach_chan{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
 .logo_header{
     margin-left: 20px;
 }
-.st_logo_web{
+.st_logo_web_header{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Hurricane', cursive;
     font-size: 70px;
     font-weight: 600;
@@ -30,7 +33,6 @@
 }
 
 .s img{
-    filter: invert(100%) sepia(0%) saturate(4128%) hue-rotate(185deg) brightness(98%) contrast(85%);
     width: 20px;
     height: 20px;
     margin: 15px;
@@ -40,19 +42,19 @@
     transition: 0.5s;
 }
 .user:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 .search:hover{
     position: relative;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 .shopping_bag:hover{
     position: relative;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 .menu:hover{
     position: relative;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 .navbar ul{
     list-style: none;
@@ -66,7 +68,7 @@
     padding-bottom: 48px;
 }
 .navbar ul li a{
-    color: #e8e6e3;
+    color: #000000;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -77,7 +79,7 @@
     display:block;
     height: 2px;
     width: 0%;
-    background: white;
+    background: rgb(0, 0, 0);
     transition: width .3s ease-in-out;
 }
 .navbar ul li a:hover:after{
@@ -91,12 +93,12 @@
     position: absolute;
     left: 0;
     top: 100%;
-    background-color:#181a1b;
-    border-top: 1px solid pink;
+    background-color:#ffffff;
+    border-top: 1px solid rgb(0, 0, 0);
 }
 .dropdown__menu_pagse ul li a{
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 320;
     letter-spacing: 1px;
 }
 .dropdown__menu_pagse ul li a:after{
@@ -104,8 +106,11 @@
     display:block;
     height: 0px;
     width: 0%;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     transition: width .3s ease-in-out;
+}
+#hienboder{
+    border-bottom: 1px solid black;
 }
 .dropdown__menu_pagse ul li a:hover{
     color:#8c8274;
@@ -143,9 +148,11 @@
 }
 
 
+
+
 .nd_shop{
-    background-color: #181a1b;
-    color: #e8e6e3;
+    background-color: #ffffff;
+    color: #000000;
     width:auto;
     height: 1880px;
     padding-top: 130px;
@@ -164,7 +171,7 @@
 }
 
 .anh_doban{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: inline-block;
 }
 .list_anhdoban{
@@ -174,7 +181,7 @@
 .ndcuanhdoban{
     text-align: center;
     text-decoration: none;
-    color: #e8e6e3;
+    color: #000000;
 }
 .list_chudoban{
     margin: 25px 25px;
@@ -197,10 +204,9 @@
 .background_logolist{
     position: relative;
     bottom: -310px;
-    background-color: #181a1b;
+    background-color: #ffffff;
 }
 .logo_hover_list1 img{
-    filter: invert(97%) sepia(3%) saturate(3949%) hue-rotate(298deg) brightness(114%) contrast(83%);
     height: 40px;
     width: 40px;
     padding: 10px;
@@ -219,13 +225,13 @@
     border: 0;
     width: 270px;
     padding: 5px;
-    background: #181a1b;
-    border-bottom: 2px solid #8c8274;
+    background: #ffffff;
+    border-bottom: 2px solid #000000;
     font-size: 18px;
-    color: #e8e6e3;
+    color: #000000;
 }
-::-webkit-input-placeholder{
-    color: #e8e6e3;
+.searchr_1::-webkit-input-placeholder{
+    color: #000000;
 }
 .chu_CATEGORY{
     font-size: 27px;
@@ -239,7 +245,7 @@
 }
 .nd_CATEGORY{
     font-size: 17px;
-    color: #e8e6e3;    
+    color: #000000;    
     text-decoration: none;
     display: inline-block;
 }
@@ -261,8 +267,9 @@
     width: 100%;
     transition: width .2s;
 }
+
 #next img{
-    width: 30px;
+    width: 15px;
     height: 15px;
     transition:  all 0.3s ease-in-out;
 }
@@ -280,7 +287,7 @@
     color: #8c8274;
 }
 .st_pagin{
-    color: #e8e6e3;
+    color: #000000;
     text-decoration: none;
     font-size: 18px;
     letter-spacing: 20px;
@@ -288,16 +295,23 @@
 .st_pagin.st_pagin:hover{
     color: #8c8274;
 }
-
 /* footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
 .footer{
-    margin: auto;
+    margin-top: 0px;
     height: 140px;
     background: #000000;
     padding: 170px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.st_logo_web{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Hurricane', cursive;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 10px;
 }
 .chu_footer{
     color: white;

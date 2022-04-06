@@ -213,6 +213,9 @@ form .txt_field{
     background: none;
     outline: none;
 }
+#hienboder{
+    border-bottom: 1px solid black;
+}
 .txt_field label{
     position: absolute;
     top: 50%;
