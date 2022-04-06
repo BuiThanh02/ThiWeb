@@ -122,6 +122,9 @@
     padding-bottom: 15px;
 }
 
+
+
+
 .contac_us1 {
     background-image: url('../images/pagse/contactus/contacus_1.jpg');
     background-size:cover ;
@@ -134,8 +137,9 @@
     background-color: #ffffff;
     width: auto;
     height: 700px;
-    padding: 130px;
+    padding-top: 50px;
     position: relative;
+    
 }
 .nd_trai{
     float: left;

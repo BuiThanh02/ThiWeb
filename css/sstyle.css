@@ -154,9 +154,9 @@
     background-color: #ffffff;
     color: #000000;
     width:auto;
-    height: 1880px;
-    padding-top: 130px;
-    padding-left: 280px;
+    height: 1800px;
+    padding-top: 100px;
+    padding-left: 70px;
 }
 .nd_shop_btrai{
     float: left;
@@ -219,7 +219,7 @@
 .nd_shop_bphai{
     position:relative;
     float: right;
-    margin-right: 300px;
+    padding-right: 70px;
 }
 .searchr_1{
     border: 0;
@@ -280,7 +280,7 @@
     background-color: #181a1b;
     color: #e8e6e3;
     width:auto;
-    padding-left: 280px;
+    padding-left: 100px;
     height: 100px;
 }
 #page_1{

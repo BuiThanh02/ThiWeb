@@ -211,8 +211,7 @@
     position: relative;
     display: inline-flex;
     color: white;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10px;
     padding-top: 150px;
 }
 .nd_anh_post{
