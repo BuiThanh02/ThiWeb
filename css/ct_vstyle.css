@@ -141,93 +141,49 @@
     border-bottom: 1px solid #e8e6e3;
 }
 #gach_chan{
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
 }
-
-
 
 .nd_view{
-    background-color:#ffffff;
-    width: auto;
-    height: 1800px;
-    padding-left: 90px;
-    padding-top: 120px;
+    padding: 70px 130px;
 }
-.right-col{
-    float: right;
-    display: flex;
-    margin-right: 200px;
-    margin-top: -20px;
-    align-items: center;
+.anh_view{
+    text-align: center;
 }
-.right-col p{
-    margin-right: 10px;
+.anh_view img{
+    width: 1300px;
 }
-.playpause.playing{
-    background-color: pink;
-    clip-path: polygon(0 0, 40% 0, 40% 100%, 60% 100%, 60% 0, 100% 0, 100% 100%, 0 100%);
-}
-.playpause{
-    width: 17px;
-    height: 17px;
-    background-color: white;
-    cursor: pointer;
-    transition: 0.25s ease-in-out;
-    clip-path: polygon(0 0, 50% 25%, 50% 75%, 50% 75%, 50% 25%, 100% 50%, 100% 50%, 0 100%);
-}
-
-
-.anh_streets{
+.chu{
+    margin-top: 50px;
     position: relative;
-    width: 400px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    user-select: none;
-}
-.st_anh_streets img{
-    height: 500px;
-    width: 100%;
-    display: block;
-}
-.img__overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: aliceblue;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.5s;
 }
-.img__overlay--blur{
-    backdrop-filter: blur(1px);
+.chu_to{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
 }
-.img__overlay > *{
-    transform: translateY(20px);
-    transition: transform 0.5s;
+.ct_chu_to{
+    font-size: 13px;
+    font-weight:200;
 }
-.img__overlay:hover{
-    opacity: 1;
+.nd_phai{
+    width: 1000px;
+    padding: 20px 25px;
 }
-.img__overlay:hover > *{
-    transform: translateY(0);
-}
-
-.img__title{
+.client{
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
     font-size: 15px;
 }
-.img__description{
-    font-size: 25px;
-    letter-spacing: 7px;
-    font-weight: 600;
-}
-.nd_view_1{
-    display:flex;
+.client a{
+    font-weight:200;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
 }
 
 
