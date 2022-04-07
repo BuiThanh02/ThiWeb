@@ -19,7 +19,7 @@ document.getElementById('product').innerHTML = "<p style=\"font-size: 20px; font
     "                </div>\n" +
     "                <p style=\"font-weight: lighter; letter-spacing: 1px; margin-top: 40px\">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</p>\n" +
     "                <div class=\"checkOut\" style=\"margin-top: 30px\">\n" +
-    "                    <a>\n" +
+    "                    <a href='Home.html'>\n" +
     "                        <button onclick='placeOrder()'>PLACE ORDER</button>\n" +
     "                    </a>\n" +
     "                </div>"
@@ -55,7 +55,7 @@ function placeOrder(){
     var city = document.getElementById('city');
     var postcode = document.getElementById('postcode');
     var phone = document.getElementById('phone');
-    var email = document.getElementById('email');
+    var email = document.getElementById('emails');
 
     var fVal = fName.value;
     var lVal = lName.value;
@@ -87,4 +87,5 @@ function placeOrder(){
     localStorage.removeItem('cou');
     localStorage.removeItem('cart');
     alert('Thank you')
+
 }

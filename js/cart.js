@@ -5,7 +5,7 @@ if (cart.length < 1){
     document.getElementById("noCart").innerHTML = "<div>" +
         "                    <p>YOUR CART IS CURRENTLY EMPTY.</p>" +
         "                    <div style=\"margin-right: auto; margin-left: auto; text-align: center\">" +
-        "                        <a>" +
+        "                        <a href='shop.html'>" +
         "                            <button>RETURN TO SHOP</button>" +
         "                        </a>" +
         "                    </div>" +
@@ -35,7 +35,7 @@ else{
         "                    <p STYLE=\"font-size: 20px; letter-spacing: 10px; font-weight: bold\">CART TOTALS</p>\n" +
         "<div id='cartTotal'></div>" +
         "                    <div class=\"checkOut\" style=\"margin-top: 40px\">\n" +
-        "                        <a>\n" +
+        "                        <a href='checkout.html'>\n" +
         "                            <button>PROCESS TO CHECKOUT</button>\n" +
         "                        </a>\n" +
         "                    </div>\n" +

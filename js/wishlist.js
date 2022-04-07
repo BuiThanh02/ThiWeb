@@ -4,7 +4,7 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 if (wish.length < 1){
     document.getElementById("noWishlist").innerHTML = "<div style='border: 2px solid black; height:104px'>" +
         "                    <p>There are no product in wishlist yet. Let do some shopping.</p>" +
-        "                    <a href='/Home.html'><button>Shop</button></a>" +
+        "                    <a href='Home.html'><button>Shop</button></a>" +
         "                </div>"
 } else {
     document.getElementById("wishList").innerHTML = "<table style=\"margin-top: 50px\">" +
@@ -55,7 +55,7 @@ if (wish.length < 1){
             if (check(product) === true){
                 document.getElementById("link").innerHTML = "<div style='width: 1200px; border: 2px solid black; height:104px'>" +
                     "<p>" + product.name + " already in your cart.</p>" +
-                    "<a href='wishlistandcart/Cart.html'>" +
+                    "<a href='Cart.html'>" +
                     "<button type='button'>VIEW CART</button>" +
                     "</a>" +
                     "</div>";
@@ -65,7 +65,7 @@ if (wish.length < 1){
                 localStorage.setItem('cart', JSON.stringify(cart));
                 document.getElementById("link").innerHTML = "<div style='width: 1200px; border: 2px solid black; height:104px'>" +
                     "<p>" + product.name + " has been added to your cart.</p>" +
-                    "<a href='wishlistandcart/Cart.html'>" +
+                    "<a href='Cart.html'>" +
                     "<button type='button'>VIEW CART</button>" +
                     "</a>" + "</div>";
             }

@@ -3,10 +3,6 @@ $(".wishlist").click(function () {
 
 })
 
-$(".addtocart").click((function (){
-    $(this).toggleClass('add2')
-}))
-
 const contents = document.querySelector('.content');
 const c1 = document.querySelector('.c1');
 const c2 = document.querySelector('.c2');
