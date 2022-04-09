@@ -1,38 +1,4 @@
-/*function checkpassword(){
-    let password = document.getElementById("password").value;
-    let cf_password = document.getElementById("cf_password").value;
-    let message_cf_password = document.getElementById("message_cf_password");
-    console.log(password,cf_password,message_cf_password);
 
-    if(password.length != 0){
-        if(password == cf_password){
-            message.textContent = "Passwords match";
-        }
-        else{
-            message.textContent = "Passwords don't match"
-        }
-    }
-
-    if(message.length > 0){
-        e.preventDefault()
-        message_cf_password.innerText = message.join(', ')
-    }
-}*/
-/*form.addEventListener('submit', e =>{
-    let message = []
-    
-    if(password_id.value != cf_password){
-        message.push('Password dont match')
-    }
-    else{
-        message.push('Password match')
-    }
-    
-    if(message.length > 0){
-        e.preventDefault();
-        message_cf_password.innerText = message.join(', ')
-    }
-});*/
 
 const name_id = document.getElementById('name');
 const form = document.getElementById('form');
@@ -68,27 +34,17 @@ document.querySelector('.button').onclick =function(){
     var cl_pass = document.querySelector('.cl_pass').value,
         cl_cf_pass = document.querySelector('.cl_cf_pass').value;
 
-        if(cl_pass == ""){
-            alert("Field cannot be empty.");
-        }
-        else if(cl_pass != cl_cf_pass){
-            alert("Password didn't match try again.");
-            return false
-        }
-        else if( cl_pass == cl_cf_pass ){
-            alert("Password match.");
-        }
-        return true;
+    if(cl_pass == ""){
+        alert("Field cannot be empty.");
+    }
+    else if(cl_pass != cl_cf_pass){
+        alert("Password didn't match try again.");
+        return false
+    }
+    return true;
 };
 
 
-function setFormMessage(formElement, type, message) {
-    const messageElement = formElement.querySelector(".form_message");
-
-    messageElement.textContent = message;
-    messageElement.classList.remove("form_message--success", "form_message--error");
-    messageElement.classList.add(`form_message--${type}`);
-}
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -132,3 +88,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+
+function setFormMessage(formElement, type, message) {
+    const messageElement = formElement.querySelector(".form_message");
+
+    messageElement.textContent = message;
+    messageElement.classList.remove("form_message--success", "form_message--error");
+    messageElement.classList.add(`form_message--${type}`);
+}

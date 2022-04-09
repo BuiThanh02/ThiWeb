@@ -157,7 +157,7 @@ $('.rate').on('change mouseover mouseout', () => {
 
 })
 
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
+let cart = [];
 function addToCart(){
     var proName = document.getElementById("proName");
     var proPrice = document.getElementById("proPrice");
@@ -179,12 +179,12 @@ function addToCart(){
     localStorage.setItem('cart', JSON.stringify(cart));
     document.getElementById("link").innerHTML = "<div style='width: 1200px; border: 2px solid black; height:104px'>" +
         "<p>" + product.name + " has been added to your cart.</p>" +
-        "<a href='wishlistandcart/Cart.html'>" +
+        "<a href='Cart.html'>" +
         "<button type='button'>VIEW CART</button>" +
         "</a>" + "</div>";
 }
 
-let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+let wishlist = [];
 function addToWishlist(){
     var proName = document.getElementById("proName");
     var proPrice = document.getElementById("proPrice");
@@ -199,29 +199,15 @@ function addToWishlist(){
         price: priceVal,
         img: imgSrc,
     };
-    for (let i = 0; i < wishlist.length; i++){
-        if (wishlist[i].name !== product.name){
+        if (wishlist.name !== product.name){
             wishlist.push(product);
             localStorage.setItem('wishlist', JSON.stringify(wishlist));
             document.getElementById("link").innerHTML = "<div style='width: 1200px; border: 2px solid black; height:104px'>" +
                 "<p>" + product.name + " has been added to your whistlist.</p>" +
-                "<a href='wishlistandcart/Wishlist.html'>" +
+                "<a href='Wishlist.html'>" +
                 "<button type='button'>VIEW WISHLIST</button>" +
                 "</a>" + "</div>";
-            return;
         }
-    }
-    for (let i = 0; i < wishlist.length; i++){
-        if (wishlist[i].name === product.name){
-            document.getElementById("link").innerHTML = "<div style='width: 1200px; border: 2px solid black; height:104px'>" +
-                "<p>" + product.name + " has been removed from your wishlist.</p>" +
-                "</div>";
-            wishlist.splice(i,1);
-            localStorage.setItem('wishlist', JSON.stringify(wish));
-            return;
-        }
-    }
-
 }
 $(".wishlist").click(function () {
     $(this).toggleClass('add')
@@ -251,70 +237,70 @@ function slideShow(){
     }
 }
 
-function addToCarts( i ){
-    var name = document.getElementsByClassName('proName')[i];
-    var price = document.getElementsByClassName('proPrice')[i];
-    var img = document.getElementsByClassName('proImg')[i];
-
-    var nameVal = name.innerText;
-    var priceVal = price.innerText;
-    var imgSrc = img.src;
-
-    const product = {
-        name: nameVal,
-        price: priceVal,
-        img: imgSrc,
-        qty: 1,
-    }
-    for (let i = 0; i < cart.length; i++){
-        if (cart[i].name !== product.name){
-            cart.push(product);
-            localStorage.setItem('cart', JSON.stringify(cart));
-            alert('Product has been added to your cart !!!')
-            return;
-        }
-    }
-    for (let i = 0; i < cart.length; i++){
-        if (cart[i].name === product.name){
-            cart.splice(i,1);
-            localStorage.setItem('cart', JSON.stringify(cart));
-            alert('Product has been removed from your cart !!!')
-            return;
-        }
-    }
-
-}
-
-
-function addToWishlists( i ){
-    var name = document.getElementsByClassName('proName')[i];
-    var price = document.getElementsByClassName('proPrice')[i];
-    var img = document.getElementsByClassName('proImg')[i];
-
-    var nameVal = name.innerText;
-    var priceVal = price.innerText;
-    var imgSrc = img.src;
-
-    const product = {
-        name: nameVal,
-        price: priceVal,
-        img: imgSrc,
-        qty: 1,
-    }
-    for (let i = 0; i < wishlist.length; i++){
-        if (wishlist[i].name !== wishlist.name){
-            wishlist.push(product);
-            localStorage.setItem('wishlist', JSON.stringify(wishlist));
-            alert('Product has been added to your wishlist !!!')
-            return;
-        }
-    }
-    for (let i = 0; i < wishlist.length; i++){
-        if (wishlist[i].name === product.name){
-            wishlist.splice(i,1);
-            localStorage.setItem('wishlist', JSON.stringify(wishlist));
-            alert('Product has been removed from your wishlist !!!')
-            return;
-        }
-    }
-}
+// function addToCarts( i ){
+//     var name = document.getElementsByClassName('proName')[i];
+//     var price = document.getElementsByClassName('proPrice')[i];
+//     var img = document.getElementsByClassName('proImg')[i];
+//
+//     var nameVal = name.innerText;
+//     var priceVal = price.innerText;
+//     var imgSrc = img.src;
+//
+//     const product = {
+//         name: nameVal,
+//         price: priceVal,
+//         img: imgSrc,
+//         qty: 1,
+//     }
+//     for (let i = 0; i < cart.length; i++){
+//         if (cart[i].name !== product.name){
+//             cart.push(product);
+//             localStorage.setItem('cart', JSON.stringify(cart));
+//             alert('Product has been added to your cart !!!')
+//             return;
+//         }
+//     }
+//     for (let i = 0; i < cart.length; i++){
+//         if (cart[i].name === product.name){
+//             cart.splice(i,1);
+//             localStorage.setItem('cart', JSON.stringify(cart));
+//             alert('Product has been removed from your cart !!!')
+//             return;
+//         }
+//     }
+//
+// }
+//
+//
+// function addToWishlists( i ){
+//     var name = document.getElementsByClassName('proName')[i];
+//     var price = document.getElementsByClassName('proPrice')[i];
+//     var img = document.getElementsByClassName('proImg')[i];
+//
+//     var nameVal = name.innerText;
+//     var priceVal = price.innerText;
+//     var imgSrc = img.src;
+//
+//     const product = {
+//         name: nameVal,
+//         price: priceVal,
+//         img: imgSrc,
+//         qty: 1,
+//     }
+//     for (let i = 0; i < wishlist.length; i++){
+//         if (wishlist[i].name !== wishlist.name){
+//             wishlist.push(product);
+//             localStorage.setItem('wishlist', JSON.stringify(wishlist));
+//             alert('Product has been added to your wishlist !!!')
+//             return;
+//         }
+//     }
+//     for (let i = 0; i < wishlist.length; i++){
+//         if (wishlist[i].name === product.name){
+//             wishlist.splice(i,1);
+//             localStorage.setItem('wishlist', JSON.stringify(wishlist));
+//             alert('Product has been removed from your wishlist !!!')
+//             return;
+//         }
+//     }
+// }
