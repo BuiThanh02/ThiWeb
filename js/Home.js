@@ -18,7 +18,6 @@ contents.addEventListener('dragstart', (e)=>{
     start = e.clientX;
 })
 contents.addEventListener('dragover', (e)=>{
-    e.preventDefault();
     let touch = e.clientX;
     change = start - touch;
 })
@@ -35,7 +34,6 @@ c1.addEventListener('dragstart', (e)=>{
     start = e.clientX;
 })
 c1.addEventListener('dragover', (e)=>{
-    e.preventDefault();
     let touch = e.clientX;
     change = start - touch;
 })
@@ -52,7 +50,6 @@ c2.addEventListener('dragstart', (e)=>{
     start = e.clientX;
 })
 c2.addEventListener('dragover', (e)=>{
-    e.preventDefault();
     let touch = e.clientX;
     change = start - touch;
 })
@@ -69,7 +66,6 @@ c3.addEventListener('dragstart', (e)=>{
     start = e.clientX;
 })
 c3.addEventListener('dragover', (e)=>{
-    e.preventDefault();
     let touch = e.clientX;
     change = start - touch;
 })
@@ -86,7 +82,6 @@ c4.addEventListener('dragstart', (e)=>{
     start = e.clientX;
 })
 c4.addEventListener('dragover', (e)=>{
-    e.preventDefault();
     let touch = e.clientX;
     change = start - touch;
 })
@@ -103,7 +98,6 @@ c5.addEventListener('dragstart', (e)=>{
     start = e.clientX;
 })
 c5.addEventListener('dragover', (e)=>{
-    e.preventDefault();
     let touch = e.clientX;
     change = start - touch;
 })
@@ -116,71 +110,71 @@ function slideShow5(){
     }
 }
 
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-function addToCarts( i ){
-    var name = document.getElementsByClassName('proName')[i];
-    var price = document.getElementsByClassName('proPrice')[i];
-    var img = document.getElementsByClassName('proImg')[i];
-
-    var nameVal = name.innerText;
-    var priceVal = price.innerText;
-    var imgSrc = img.src;
-
-    const product = {
-        name: nameVal,
-        price: priceVal,
-        img: imgSrc,
-        qty: 1,
-    }
-    for (let i = 0; i < cart.length; i++){
-        if (cart[i].name !== product.name){
-            cart.push(product);
-            localStorage.setItem('cart', JSON.stringify(cart));
-            alert('Product has been added to your cart !!!')
-            return;
-        }
-    }
-    for (let i = 0; i < cart.length; i++){
-        if (cart[i].name === product.name){
-            cart.splice(i,1);
-            localStorage.setItem('cart', JSON.stringify(cart));
-            alert('Product has been removed from your cart !!!')
-            return;
-        }
-    }
-
-}
-
-let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-function addToWishlists( i ){
-    var name = document.getElementsByClassName('proName')[i];
-    var price = document.getElementsByClassName('proPrice')[i];
-    var img = document.getElementsByClassName('proImg')[i];
-
-    var nameVal = name.innerText;
-    var priceVal = price.innerText;
-    var imgSrc = img.src;
-
-    const product = {
-        name: nameVal,
-        price: priceVal,
-        img: imgSrc,
-        qty: 1,
-    }
-    for (let i = 0; i < wishlist.length; i++){
-        if (wishlist[i].name !== wishlist.name){
-            wishlist.push(product);
-            localStorage.setItem('wishlist', JSON.stringify(wishlist));
-            alert('Product has been added to your wishlist !!!')
-            return;
-        }
-    }
-    for (let i = 0; i < wishlist.length; i++){
-        if (wishlist[i].name === product.name){
-            wishlist.splice(i,1);
-            localStorage.setItem('wishlist', JSON.stringify(wishlist));
-            alert('Product has been removed from your wishlist !!!')
-            return;
-        }
-    }
-}
+// let cart = JSON.parse(localStorage.getItem('cart')) || [];
+// function addToCarts( i ){
+//     var name = document.getElementsByClassName('proName')[i];
+//     var price = document.getElementsByClassName('proPrice')[i];
+//     var img = document.getElementsByClassName('proImg')[i];
+//
+//     var nameVal = name.innerText;
+//     var priceVal = price.innerText;
+//     var imgSrc = img.src;
+//
+//     const product = {
+//         name: nameVal,
+//         price: priceVal,
+//         img: imgSrc,
+//         qty: 1,
+//     }
+//     for (let i = 0; i < cart.length; i++){
+//         if (cart[i].name !== product.name){
+//             cart.push(product);
+//             localStorage.setItem('cart', JSON.stringify(cart));
+//             alert('Product has been added to your cart !!!')
+//             return;
+//         }
+//     }
+//     for (let i = 0; i < cart.length; i++){
+//         if (cart[i].name === product.name){
+//             cart.splice(i,1);
+//             localStorage.setItem('cart', JSON.stringify(cart));
+//             alert('Product has been removed from your cart !!!')
+//             return;
+//         }
+//     }
+//
+// }
+//
+// let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+// function addToWishlists( i ){
+//     var name = document.getElementsByClassName('proName')[i];
+//     var price = document.getElementsByClassName('proPrice')[i];
+//     var img = document.getElementsByClassName('proImg')[i];
+//
+//     var nameVal = name.innerText;
+//     var priceVal = price.innerText;
+//     var imgSrc = img.src;
+//
+//     const product = {
+//         name: nameVal,
+//         price: priceVal,
+//         img: imgSrc,
+//         qty: 1,
+//     }
+//     for (let i = 0; i < wishlist.length; i++){
+//         if (wishlist[i].name !== wishlist.name){
+//             wishlist.push(product);
+//             localStorage.setItem('wishlist', JSON.stringify(wishlist));
+//             alert('Product has been added to your wishlist !!!')
+//             return;
+//         }
+//     }
+//     for (let i = 0; i < wishlist.length; i++){
+//         if (wishlist[i].name === product.name){
+//             wishlist.splice(i,1);
+//             localStorage.setItem('wishlist', JSON.stringify(wishlist));
+//             alert('Product has been removed from your wishlist !!!')
+//             return;
+//         }
+//     }
+// }
