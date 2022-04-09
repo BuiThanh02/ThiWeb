@@ -1,4 +1,38 @@
+/*function checkpassword(){
+    let password = document.getElementById("password").value;
+    let cf_password = document.getElementById("cf_password").value;
+    let message_cf_password = document.getElementById("message_cf_password");
+    console.log(password,cf_password,message_cf_password);
 
+    if(password.length != 0){
+        if(password == cf_password){
+            message.textContent = "Passwords match";
+        }
+        else{
+            message.textContent = "Passwords don't match"
+        }
+    }
+
+    if(message.length > 0){
+        e.preventDefault()
+        message_cf_password.innerText = message.join(', ')
+    }
+}*/
+/*form.addEventListener('submit', e =>{
+    let message = []
+    
+    if(password_id.value != cf_password){
+        message.push('Password dont match')
+    }
+    else{
+        message.push('Password match')
+    }
+    
+    if(message.length > 0){
+        e.preventDefault();
+        message_cf_password.innerText = message.join(', ')
+    }
+});*/
 
 const name_id = document.getElementById('name');
 const form = document.getElementById('form');
@@ -83,7 +117,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
-
         setFormMessage(loginForm, "error", "Username or password is invalid.");
     });
 
